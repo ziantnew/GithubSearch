@@ -17,6 +17,8 @@
 		ACA568C027F030E8008FA38F /* GithubSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA568BF27F030E8008FA38F /* GithubSearchTests.swift */; };
 		ACA568CA27F030E8008FA38F /* GithubSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA568C927F030E8008FA38F /* GithubSearchUITests.swift */; };
 		ACA568CC27F030E8008FA38F /* GithubSearchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA568CB27F030E8008FA38F /* GithubSearchUITestsLaunchTests.swift */; };
+		ACA568DA27F03BEF008FA38F /* RepositoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA568D927F03BEF008FA38F /* RepositoryService.swift */; };
+		ACA568DE27F03FB4008FA38F /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA568DD27F03FB4008FA38F /* Repository.swift */; };
 		EADA8BB1C94D733F494D27E4 /* Pods_GithubSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA8CF27158731D0EC53AF83 /* Pods_GithubSearch.framework */; };
 		EEF2256B07BF5901BE939BFD /* Pods_GithubSearch_GithubSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC94A5B8B087D09B659C2AA2 /* Pods_GithubSearch_GithubSearchUITests.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +61,8 @@
 		ACA568C527F030E8008FA38F /* GithubSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA568C927F030E8008FA38F /* GithubSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSearchUITests.swift; sourceTree = "<group>"; };
 		ACA568CB27F030E8008FA38F /* GithubSearchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSearchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ACA568D927F03BEF008FA38F /* RepositoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryService.swift; sourceTree = "<group>"; };
+		ACA568DD27F03FB4008FA38F /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		F99033D4E592263F48F6D56C /* Pods-GithubSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubSearchTests.release.xcconfig"; path = "Target Support Files/Pods-GithubSearchTests/Pods-GithubSearchTests.release.xcconfig"; sourceTree = "<group>"; };
 		FC94A5B8B087D09B659C2AA2 /* Pods_GithubSearch_GithubSearchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithubSearch_GithubSearchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -101,7 +105,6 @@
 				2FA57683ACF8157BE32B2476 /* Pods-GithubSearchTests.debug.xcconfig */,
 				F99033D4E592263F48F6D56C /* Pods-GithubSearchTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -130,6 +133,10 @@
 		ACA568A727F030E3008FA38F /* GithubSearch */ = {
 			isa = PBXGroup;
 			children = (
+				ACA568D827F03B7F008FA38F /* APIService */,
+				ACA568DB27F03F79008FA38F /* Model */,
+				ACA568DF27F04365008FA38F /* ViewModel */,
+				ACA568E027F04373008FA38F /* View */,
 				ACA568A827F030E3008FA38F /* AppDelegate.swift */,
 				ACA568AA27F030E3008FA38F /* SceneDelegate.swift */,
 				ACA568AC27F030E3008FA38F /* ViewController.swift */,
@@ -156,6 +163,36 @@
 				ACA568CB27F030E8008FA38F /* GithubSearchUITestsLaunchTests.swift */,
 			);
 			path = GithubSearchUITests;
+			sourceTree = "<group>";
+		};
+		ACA568D827F03B7F008FA38F /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				ACA568D927F03BEF008FA38F /* RepositoryService.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		ACA568DB27F03F79008FA38F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ACA568DD27F03FB4008FA38F /* Repository.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ACA568DF27F04365008FA38F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ACA568E027F04373008FA38F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		DF699961F01DF5B32BAEFF10 /* Frameworks */ = {
@@ -409,6 +446,8 @@
 			files = (
 				ACA568AD27F030E3008FA38F /* ViewController.swift in Sources */,
 				ACA568A927F030E3008FA38F /* AppDelegate.swift in Sources */,
+				ACA568DE27F03FB4008FA38F /* Repository.swift in Sources */,
+				ACA568DA27F03BEF008FA38F /* RepositoryService.swift in Sources */,
 				ACA568AB27F030E3008FA38F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -589,6 +628,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UR9BW3835D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GithubSearch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -596,6 +636,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -617,6 +658,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UR9BW3835D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GithubSearch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -624,6 +666,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
