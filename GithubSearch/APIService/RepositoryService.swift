@@ -25,9 +25,7 @@ struct RepositoryService: RepositoryServiceProtocol
         let emptyResult: ([Repository], Int?) = ([], nil)
         
         guard let query = query, !query.isEmpty else { return .just(emptyResult) }
-        
-        print("query::\(query)")
-        
+                
         let url = baseURL + "/search/repositories"
         let params: Parameters = [
             "q": query,
