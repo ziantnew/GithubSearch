@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		792B105EC96B505CD351DE1B /* Pods_GithubSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6D290DEC004C0EE775A01F /* Pods_GithubSearchTests.framework */; };
+		AC4385CF27F1DF8D00622F6C /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4385CE27F1DF8D00622F6C /* Image+Extension.swift */; };
 		ACA568A927F030E3008FA38F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA568A827F030E3008FA38F /* AppDelegate.swift */; };
 		ACA568AB27F030E3008FA38F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA568AA27F030E3008FA38F /* SceneDelegate.swift */; };
 		ACA568AD27F030E3008FA38F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA568AC27F030E3008FA38F /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 		ACA568EE27F05C26008FA38F /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA568EC27F05C26008FA38F /* RepositoryTableViewCell.swift */; };
 		ACA568EF27F05C26008FA38F /* RepositoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACA568ED27F05C26008FA38F /* RepositoryTableViewCell.xib */; };
 		ACA568F227F05D11008FA38F /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA568F127F05D11008FA38F /* ImageLoader.swift */; };
+		ACA568F427F06B35008FA38F /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA568F327F06B35008FA38F /* Array+Extension.swift */; };
 		EADA8BB1C94D733F494D27E4 /* Pods_GithubSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA8CF27158731D0EC53AF83 /* Pods_GithubSearch.framework */; };
 		EEF2256B07BF5901BE939BFD /* Pods_GithubSearch_GithubSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC94A5B8B087D09B659C2AA2 /* Pods_GithubSearch_GithubSearchUITests.framework */; };
 /* End PBXBuildFile section */
@@ -54,6 +56,7 @@
 		42E97D0C668DF103BFA6AABF /* Pods-GithubSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubSearch.release.xcconfig"; path = "Target Support Files/Pods-GithubSearch/Pods-GithubSearch.release.xcconfig"; sourceTree = "<group>"; };
 		5CF8875F2334A5198F600C86 /* Pods-GithubSearch-GithubSearchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubSearch-GithubSearchUITests.release.xcconfig"; path = "Target Support Files/Pods-GithubSearch-GithubSearchUITests/Pods-GithubSearch-GithubSearchUITests.release.xcconfig"; sourceTree = "<group>"; };
 		81AD549127A5B85F06D7D66C /* Pods-GithubSearch-GithubSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubSearch-GithubSearchUITests.debug.xcconfig"; path = "Target Support Files/Pods-GithubSearch-GithubSearchUITests/Pods-GithubSearch-GithubSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC4385CE27F1DF8D00622F6C /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
 		ACA568A527F030E3008FA38F /* GithubSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA568A827F030E3008FA38F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACA568AA27F030E3008FA38F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +78,7 @@
 		ACA568EC27F05C26008FA38F /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
 		ACA568ED27F05C26008FA38F /* RepositoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryTableViewCell.xib; sourceTree = "<group>"; };
 		ACA568F127F05D11008FA38F /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		ACA568F327F06B35008FA38F /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		F99033D4E592263F48F6D56C /* Pods-GithubSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubSearchTests.release.xcconfig"; path = "Target Support Files/Pods-GithubSearchTests/Pods-GithubSearchTests.release.xcconfig"; sourceTree = "<group>"; };
 		FC94A5B8B087D09B659C2AA2 /* Pods_GithubSearch_GithubSearchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithubSearch_GithubSearchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -118,6 +122,14 @@
 				F99033D4E592263F48F6D56C /* Pods-GithubSearchTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		AC5E58CA27F1745800BE9C7C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ACA568E927F05B56008FA38F /* SearchViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		ACA5689C27F030E3008FA38F = {
@@ -206,8 +218,8 @@
 		ACA568E027F04373008FA38F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AC5E58CA27F1745800BE9C7C /* ViewController */,
 				ACA568EB27F05C07008FA38F /* TableViewCell */,
-				ACA568E927F05B56008FA38F /* SearchViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -241,6 +253,8 @@
 			isa = PBXGroup;
 			children = (
 				ACA568F127F05D11008FA38F /* ImageLoader.swift */,
+				ACA568F327F06B35008FA38F /* Array+Extension.swift */,
+				AC4385CE27F1DF8D00622F6C /* Image+Extension.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -498,6 +512,7 @@
 				ACA568EE27F05C26008FA38F /* RepositoryTableViewCell.swift in Sources */,
 				ACA568E727F057D3008FA38F /* RepoTableSection.swift in Sources */,
 				ACA568F227F05D11008FA38F /* ImageLoader.swift in Sources */,
+				ACA568F427F06B35008FA38F /* Array+Extension.swift in Sources */,
 				ACA568AD27F030E3008FA38F /* ViewController.swift in Sources */,
 				ACA568EA27F05B56008FA38F /* SearchViewController.swift in Sources */,
 				ACA568A927F030E3008FA38F /* AppDelegate.swift in Sources */,
@@ -505,6 +520,7 @@
 				ACA568DA27F03BEF008FA38F /* RepositoryService.swift in Sources */,
 				ACA568E427F05604008FA38F /* SearchReactor.swift in Sources */,
 				ACA568AB27F030E3008FA38F /* SceneDelegate.swift in Sources */,
+				AC4385CF27F1DF8D00622F6C /* Image+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

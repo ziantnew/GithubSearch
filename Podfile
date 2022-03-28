@@ -8,6 +8,8 @@ target 'GithubSearch' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'RxDataSources'
+  pod 'Alamofire'
+  pod 'Kingfisher'
 
   # Pods for GithubSearch
 
