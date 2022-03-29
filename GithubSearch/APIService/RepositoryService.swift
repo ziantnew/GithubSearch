@@ -18,7 +18,6 @@ protocol RepositoryServiceProtocol {
 struct RepositoryService: RepositoryServiceProtocol
 {
     private let baseURL = "https://api.github.com"
-//    private let token = "token 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"
     
     func  search(query: String?, page: Int) -> Observable<(items: [Repository], nextPage: Int?)> {
         
