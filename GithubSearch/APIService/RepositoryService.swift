@@ -18,7 +18,7 @@ protocol RepositoryServiceProtocol {
 struct RepositoryService: RepositoryServiceProtocol
 {
     private let baseURL = "https://api.github.com"
-    private let token = "token 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"
+//    private let token = "token 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"
     
     func  search(query: String?, page: Int) -> Observable<(items: [Repository], nextPage: Int?)> {
         
@@ -31,7 +31,7 @@ struct RepositoryService: RepositoryServiceProtocol
             "q": query,
             "page": page
         ]
-        let headers: HTTPHeaders = ["Accept": "application/vnd.github.v3+json", "Authorization": token]
+        let headers: HTTPHeaders = ["Accept": "application/vnd.github.v3+json"]
         
         return .create() { subscriber in
             guard
